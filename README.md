@@ -1,6 +1,6 @@
 ### flac-vs-others.js
 
-> So, you think MP3 sucks. But could you actually spot the difference with FLAC quality ? Let's test your ears :)
+> So, you think MP3 sucks. But could you actually spot the difference with FLAC quality? Let's test your ears!
 
 **flac-vs-others.js* is a Node script that generates sounds compressed in various formats. They are decompressed back to WAV so you cannot distinguish them, unless you look at the answers... Or figure them out by yourself.
 
