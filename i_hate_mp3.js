@@ -1,11 +1,5 @@
 #!/usr/local/bin/node
 
-/*
-Usage: ./compression_test.js [file]
-Sound can be in either wav or flac
-Deps: (sudo apt-get install) mimetype lame flac
-*/
-
 // Init
 
 var config = require('./config.js');
@@ -23,8 +17,7 @@ var chain = removeDir(config.DIR_TMP)
   .then(function() { return removeDir(config.DIR_OUT) })
   .then(function() { return makeDir(config.DIR_TMP) })
   .then(function() { return makeDir(config.DIR_OUT) })
-  .then(function() { return convert(inputFile, config.PATH_SOUND_RAW, 'WAV') })
-  .then(function() { return convert(config.PATH_SOUND_RAW, 'test.mp3', 'MP3', 128) });
+  .then(function() { return convert(inputFile, config.PATH_SOUND_RAW, 'WAV') });
 
 var solutions = "";
 
@@ -165,9 +158,10 @@ function writeToFile(path, string) {
   }); 
 }
 
+// Utils
 
-// (Source: http://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array-in-javascript)
 function shuffle(o) { 
+    // (Source: http://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array-in-javascript)
     for (var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
     return o;
 };
