@@ -1,0 +1,7 @@
+*~
+tmp/
+out/
+*.flac
+*.wav
+*.mp3
+*.ogg
