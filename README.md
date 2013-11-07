@@ -14,7 +14,7 @@
 ### Usage
 
 ```
-./i_hate_mp3.js [INPUT FILE]
+./i-hate-mp3.js [INPUT FILE]
 ```
 
 The input file can be either in **WAV** or **FLAC** format. Or MP3/OGG, but then you're slightly missing the point. The output sounds (and the answers file) are generated in **out/**, but you can tweak this (and other stuff) in `config.js`.
