@@ -1,4 +1,4 @@
-### flac-vs-others.js
+### flac-vs-others
 
 *flac-vs-others.js* is a Node script that generates sounds compressed in various formats. They are then decompressed back to WAV, so you cannot distinguish them, unless you look at the answers... Or figure them out by yourself.
 
