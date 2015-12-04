@@ -10,7 +10,7 @@ module.exports = {
   // (ex: 'lame' or 'C:/Program Files/lame/lame.exe')
   COMMANDS: {
     FLAC: 'flac', 
-    LAME: 'lame',
+    LAME: 'D:/Apps/lame3.99.5-64/lame.exe',
     OGGENC: 'oggenc',
     OGGDEC: 'oggdec'
   },
@@ -30,9 +30,10 @@ module.exports = {
   // The files to include in the test
   COMPRESSIONS: [
     {format: 'WAV', bitrate: ''},
+    {format: 'MP3', bitrate: '64'}, // Old-school MP3
     {format: 'MP3', bitrate: '128'}, // Old-school MP3
     {format: 'MP3', bitrate: '320'}, // High-quality MP3
-    {format: 'OGG', bitrate: '160'} // Spotify
+   // {format: 'OGG', bitrate: '160'} // Spotify
   ],
   
   /*

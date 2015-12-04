@@ -2,15 +2,26 @@
 
 // Init
 
-var config = require('./config.js');
+var configPath = './config.js';
+if (process.argv[3]) {
+  configPath = require('path').resolve(process.cwd(), process.argv[3]);
+  console.log("Using custom config file: " + configPath);
+};
+var config = require(configPath);
 var Q = require('q');
-var util = require('util');
 var fs = require('fs');
 var exec = require('child_process').exec;
 var mime = require('mime');
 
 var inputFile = process.argv[2];
 config.PATH_SOUND_RAW = config.DIR_TMP + '/raw.wav';
+
+// Help
+
+if (!inputFile || ['-h', '-help', '--help', '/h', 'help'].indexOf(inputFile) != -1) {
+  console.log(fs.readFileSync(__dirname + '/README.md').toString());
+  process.exit(0);
+}
 
 // Processing
 

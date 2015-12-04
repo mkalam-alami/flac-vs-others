@@ -16,10 +16,11 @@ Works fine on Linux. Can also work on other OSes if you install the dependencies
 ```
 git clone https://github.com/mkalam-alami/flac-vs-others.git
 npm install -g flac-vs-others/
-flac-vs-others [INPUT FILE]
+flac-vs-others input [config file]
 ```
 
-The input file can be either in **WAV** or **FLAC** format. Or MP3/OGG, but then you're slightly missing the point. The output sounds (and the answers file) are generated in **out/**, but you can tweak this (and other stuff) in `config.js`.
+* ```input```: The input file can be either in **WAV** or **FLAC** format. Or MP3/OGG, but then you're slightly missing the point. The output sounds (and the answers file) are generated in **out/** by default.
+* ```config file```: You can use a custom configuration file by specifying its path. Just copy the default ```config.js``` where you want and customize it to your needs.
 
 ### Relevant
 
