@@ -9,17 +9,17 @@ module.exports = {
   // The path to your conversion executables
   // (ex: 'lame' or 'C:/Program Files/lame/lame.exe')
   COMMANDS: {
-    flac: 'flac',
-    lame: 'lame',
-    ogg_encoder: 'oggenc',
-    ogg_decoder: 'oggdec'
+    FLAC: 'flac', 
+    LAME: 'lame',
+    OGGENC: 'oggenc',
+    OGGDEC: 'oggdec'
   },
-  
+
   // Where to put the intermediate, compressed files
-  DIR_TMP: 'tmp/',
+  DIR_TMP: 'tmp',
   
   // Where to put the final test files
-  DIR_OUT: 'out/',
+  DIR_OUT: 'out',
   
   /*
   ===========
@@ -42,6 +42,9 @@ module.exports = {
   */
    
   // Delete the intermediate files
-  AUTO_DELETE_TMP: true
+  AUTO_DELETE_TMP: true,
+
+  // Trace all commands
+  VERBOSE: true
 
 };
