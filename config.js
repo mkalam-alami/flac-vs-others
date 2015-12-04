@@ -45,6 +45,6 @@ module.exports = {
   AUTO_DELETE_TMP: true,
 
   // Trace all commands
-  VERBOSE: true
+  VERBOSE: false
 
 };
